@@ -22,4 +22,4 @@ class Point:
         return translate(self.y, -1, 1, height, 0)
 
     def Display(self, screen):
-        pygame.draw.circle(screen, self.color, (self.PixelCoordX(), self.PixelCoordY()), 15)
+        pygame.draw.circle(screen, self.color, (self.PixelCoordX(), self.PixelCoordY()), 15, 3)

@@ -41,11 +41,11 @@ while run:
 
     p1 = Point(-1, lineFunction(-1),0)
     p2 = Point(1, lineFunction(1),0)
-    pygame.draw.line(screen, white, (p1.PixelCoordX(), p1.PixelCoordY()), (p2.PixelCoordX(), p2.PixelCoordY()), 2)
+    pygame.draw.line(screen, gray, (p1.PixelCoordX(), p1.PixelCoordY()), (p2.PixelCoordX(), p2.PixelCoordY()), 2)
 
     p1 = Point(-1, perceptron.guessY(-1),0)
     p2 = Point(1, perceptron.guessY(1),0)
-    pygame.draw.line(screen, gray, (p1.PixelCoordX(), p1.PixelCoordY()), (p2.PixelCoordX(), p2.PixelCoordY()), 2)
+    pygame.draw.line(screen, white, (p1.PixelCoordX(), p1.PixelCoordY()), (p2.PixelCoordX(), p2.PixelCoordY()), 2)
 
     for point in points:
         point.Display(screen)

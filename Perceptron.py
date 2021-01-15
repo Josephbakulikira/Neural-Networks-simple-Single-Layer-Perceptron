@@ -7,7 +7,7 @@ class Perceptron:
         self.weights[0] = random.uniform(-1, 1)
         self.weights[1] = random.uniform(-1, 1)
 
-        self.learning_rate = 0.0001
+        self.learning_rate = 0.01
 
     def predict(self, inputs):
         sum = 0
